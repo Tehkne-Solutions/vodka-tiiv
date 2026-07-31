@@ -1,46 +1,44 @@
-# Vodka TiiV — Website Institucional
+# Vodka TiiV
 
-Reconstrução profissional da landing page da Vodka TiiV em HTML, CSS e JavaScript puros, preparada para hospedagem estática na UOL Host.
+Landing page institucional estática da Vodka TiiV, reconstruída em HTML, CSS e JavaScript puros para publicação na UOL Host.
 
-## Objetivos
+## Estado atual
 
-- reproduzir com alta fidelidade visual a referência oficial;
-- entregar responsividade completa para desktop, notebook, tablet e celular;
-- preservar a identidade visual, as imagens e o conteúdo aprovados pela marca;
-- adicionar animações discretas, performáticas e acessíveis;
-- alcançar alto desempenho, SEO técnico completo e boa acessibilidade;
-- manter o pacote final independente de plataformas proprietárias e pronto para publicação por FTP/cPanel.
+Primeira versão funcional da landing com identidade visual baseada nos assets oficiais recebidos, responsividade, controle de maioridade, animações leves, SEO técnico, acessibilidade e otimização de imagens.
 
-## Stack de produção
+## Stack
 
-- HTML5 semântico;
-- CSS moderno, responsivo e organizado por responsabilidades;
-- JavaScript ES Modules, sem frameworks e sem dependências em produção;
-- ferramentas de desenvolvimento apenas para validação, formatação, testes e otimização;
-- entrega final em arquivos estáticos na pasta `dist/`.
+- HTML5 semântico
+- CSS moderno, responsivo e organizado por componentes
+- JavaScript ES Modules sem dependências de runtime
+- Node.js apenas para validação, build e preview local
+- GitHub Actions para qualidade e geração do pacote `dist/`
 
-## Princípios técnicos
+## Comandos
 
-- progressive enhancement;
-- mobile-first com validação visual também desktop-first para garantir paridade com a referência;
-- componentes reutilizáveis por convenções de HTML e CSS;
-- design tokens em custom properties;
-- carregamento progressivo e responsivo de imagens;
-- JavaScript não bloqueante e animações respeitando `prefers-reduced-motion`;
-- acessibilidade baseada em WCAG 2.2 AA;
-- Core Web Vitals como critérios de aceite;
-- nenhuma dependência do GreatPages no código publicado.
+```bash
+npm run check
+npm run build
+npm run serve
+```
 
-## Documentação
+O servidor local abre em `http://127.0.0.1:4173`. Para ignorar o controle de idade em revisão visual, use `?preview=1`.
 
-- [`docs/PROJECT_PLAN.md`](docs/PROJECT_PLAN.md) — escopo, arquitetura, fases e critérios de aceite;
-- [`docs/FINAL_DELIVERY_CHECKLIST.md`](docs/FINAL_DELIVERY_CHECKLIST.md) — checklist de homologação e publicação;
-- [`docs/REFERENCE_AUDIT.md`](docs/REFERENCE_AUDIT.md) — inventário inicial da referência e dos arquivos recebidos.
+## Publicação na UOL Host
 
-## Status
+1. Execute `npm run check && npm run build`.
+2. Envie o conteúdo interno de `dist/` para o diretório público da hospedagem.
+3. Confirme domínio canônico, HTTPS, redirecionamentos e página 404.
+4. Execute os testes da checklist em `docs/FINAL_DELIVERY_CHECKLIST.md`.
 
-**Fase atual:** planejamento, auditoria da referência e preparação da base técnica.
+## Pendências de homologação
 
-## Autoria
+- confirmar domínio canônico definitivo;
+- confirmar e-mail comercial e redes sociais oficiais;
+- congelar screenshots desktop/mobile da página GreatPages para a rodada pixel perfect;
+- configurar analytics somente após aprovação e consentimento adequado;
+- revisar textos legais e alegações comerciais com o cliente.
 
-Desenvolvido por **Tehkné Solutions**.
+## Assinatura
+
+Tehkné Solutions
