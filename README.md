@@ -1,20 +1,31 @@
 # Vodka TiiV
 
-Landing page institucional estática da Vodka TiiV, reconstruída em HTML, CSS e JavaScript puros para publicação na UOL Host.
+Reconstrução técnica da landing oficial da Vodka TiiV, migrada do GreatPages para uma aplicação estática em HTML, CSS e JavaScript puros.
 
-## Estado atual
+## Escopo
 
-Primeira versão funcional da landing com identidade visual baseada nos assets oficiais recebidos, responsividade, controle de maioridade, animações leves, SEO técnico, acessibilidade e otimização de imagens.
+O projeto deve reproduzir fielmente a página oficial, sem redesign, expansão editorial ou criação de novas seções.
+
+A versão atual contém:
+
+- composição principal em tela única;
+- selo oficial da marca;
+- headline “A primeira vodka orgânica do Brasil. Naturalmente suave.”;
+- fotografia oficial da garrafa em vegetação;
+- botão flutuante de WhatsApp;
+- assinatura Unti Digital;
+- SEO técnico e metadados sociais;
+- responsividade para desktop, tablet e celular;
+- configuração estática compatível com UOL Host.
 
 ## Stack
 
-- HTML5 semântico
-- CSS moderno, responsivo e organizado por componentes
-- JavaScript ES Modules sem dependências de runtime
-- Node.js apenas para validação, build e preview local
-- GitHub Actions para qualidade e geração do pacote `dist/`
+- HTML5 semântico;
+- CSS responsivo;
+- JavaScript puro;
+- nenhuma dependência de framework no ambiente publicado.
 
-## Comandos
+## Desenvolvimento
 
 ```bash
 npm run check
@@ -22,23 +33,14 @@ npm run build
 npm run serve
 ```
 
-O servidor local abre em `http://127.0.0.1:4173`. Para ignorar o controle de idade em revisão visual, use `?preview=1`.
+O conteúdo publicável é gerado na pasta `dist/`.
 
-## Publicação na UOL Host
+## Regras do projeto
 
-1. Execute `npm run check && npm run build`.
-2. Envie o conteúdo interno de `dist/` para o diretório público da hospedagem.
-3. Confirme domínio canônico, HTTPS, redirecionamentos e página 404.
-4. Execute os testes da checklist em `docs/FINAL_DELIVERY_CHECKLIST.md`.
+- não adicionar seções que não existam na referência aprovada;
+- não reutilizar scripts, pixels ou componentes proprietários do GreatPages;
+- manter o visual da referência e melhorar apenas a implementação técnica;
+- inserir links, telefone e analytics somente após confirmação oficial;
+- toda assinatura pública deste projeto deve usar **Unti Digital**.
 
-## Pendências de homologação
-
-- confirmar domínio canônico definitivo;
-- confirmar e-mail comercial e redes sociais oficiais;
-- congelar screenshots desktop/mobile da página GreatPages para a rodada pixel perfect;
-- configurar analytics somente após aprovação e consentimento adequado;
-- revisar textos legais e alegações comerciais com o cliente.
-
-## Assinatura
-
-Tehkné Solutions
+Desenvolvido por [Unti Digital](https://www.untidigital.com.br).
