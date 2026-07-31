@@ -1,46 +1,46 @@
-# Vodka TiiV — Website Institucional
+# Vodka TiiV
 
-Reconstrução profissional da landing page da Vodka TiiV em HTML, CSS e JavaScript puros, preparada para hospedagem estática na UOL Host.
+Reconstrução técnica da landing oficial da Vodka TiiV, migrada do GreatPages para uma aplicação estática em HTML, CSS e JavaScript puros.
 
-## Objetivos
+## Escopo
 
-- reproduzir com alta fidelidade visual a referência oficial;
-- entregar responsividade completa para desktop, notebook, tablet e celular;
-- preservar a identidade visual, as imagens e o conteúdo aprovados pela marca;
-- adicionar animações discretas, performáticas e acessíveis;
-- alcançar alto desempenho, SEO técnico completo e boa acessibilidade;
-- manter o pacote final independente de plataformas proprietárias e pronto para publicação por FTP/cPanel.
+O projeto deve reproduzir fielmente a página oficial, sem redesign, expansão editorial ou criação de novas seções.
 
-## Stack de produção
+A versão atual contém:
+
+- composição principal em tela única;
+- selo oficial da marca;
+- headline “A primeira vodka orgânica do Brasil. Naturalmente suave.”;
+- fotografia oficial da garrafa em vegetação;
+- botão flutuante de WhatsApp;
+- assinatura Unti Digital;
+- SEO técnico e metadados sociais;
+- responsividade para desktop, tablet e celular;
+- configuração estática compatível com UOL Host.
+
+## Stack
 
 - HTML5 semântico;
-- CSS moderno, responsivo e organizado por responsabilidades;
-- JavaScript ES Modules, sem frameworks e sem dependências em produção;
-- ferramentas de desenvolvimento apenas para validação, formatação, testes e otimização;
-- entrega final em arquivos estáticos na pasta `dist/`.
+- CSS responsivo;
+- JavaScript puro;
+- nenhuma dependência de framework no ambiente publicado.
 
-## Princípios técnicos
+## Desenvolvimento
 
-- progressive enhancement;
-- mobile-first com validação visual também desktop-first para garantir paridade com a referência;
-- componentes reutilizáveis por convenções de HTML e CSS;
-- design tokens em custom properties;
-- carregamento progressivo e responsivo de imagens;
-- JavaScript não bloqueante e animações respeitando `prefers-reduced-motion`;
-- acessibilidade baseada em WCAG 2.2 AA;
-- Core Web Vitals como critérios de aceite;
-- nenhuma dependência do GreatPages no código publicado.
+```bash
+npm run check
+npm run build
+npm run serve
+```
 
-## Documentação
+O conteúdo publicável é gerado na pasta `dist/`.
 
-- [`docs/PROJECT_PLAN.md`](docs/PROJECT_PLAN.md) — escopo, arquitetura, fases e critérios de aceite;
-- [`docs/FINAL_DELIVERY_CHECKLIST.md`](docs/FINAL_DELIVERY_CHECKLIST.md) — checklist de homologação e publicação;
-- [`docs/REFERENCE_AUDIT.md`](docs/REFERENCE_AUDIT.md) — inventário inicial da referência e dos arquivos recebidos.
+## Regras do projeto
 
-## Status
+- não adicionar seções que não existam na referência aprovada;
+- não reutilizar scripts, pixels ou componentes proprietários do GreatPages;
+- manter o visual da referência e melhorar apenas a implementação técnica;
+- inserir links, telefone e analytics somente após confirmação oficial;
+- toda assinatura pública deste projeto deve usar **Unti Digital**.
 
-**Fase atual:** planejamento, auditoria da referência e preparação da base técnica.
-
-## Autoria
-
-Desenvolvido por **Tehkné Solutions**.
+Desenvolvido por [Unti Digital](https://www.untidigital.com.br).

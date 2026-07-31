@@ -1,0 +1,6 @@
+.story__seal,
+.contact__seal {
+  content: url("../assets/images/icon-512.png");
+  aspect-ratio: 1;
+  object-fit: contain;
+}
